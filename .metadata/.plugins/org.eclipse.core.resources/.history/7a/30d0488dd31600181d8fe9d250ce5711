@@ -1,0 +1,24 @@
+
+ class Human {
+	public static String eat(String a)
+	{
+		System.out.println(a+"is eating");
+		return a;
+	}
+
+}
+public class Boy extends Human
+{
+	public static String eat(String b)
+	{
+		System.out.println(b+"eats");
+		return b;
+	}
+	public static void main(String args[])
+	{
+		Human obj = new Human();
+		Human obj1 = new Boy();
+		obj.eat("Human");
+		obj1.eat("Boy");
+	}
+}

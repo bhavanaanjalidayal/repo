@@ -1,0 +1,23 @@
+
+ class methodCalling2 {
+
+	 methodCalling2(int a,int b)
+	 {
+		 
+	 }
+	double add(int a,int b)
+	{
+		double p = Math.multiplyExact((22/7), 6);
+		
+		return p;
+	}
+}
+ public class methodCalling
+{
+	public static void main(String a[])
+	{
+		methodCalling2 f = new methodCalling2(9,0);
+		double r = f.add(12, 13);
+		System.out.println(r);
+	}
+}

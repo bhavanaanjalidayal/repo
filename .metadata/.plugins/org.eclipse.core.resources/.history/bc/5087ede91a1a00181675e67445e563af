@@ -1,0 +1,22 @@
+package HelloWorld.HelloMaven;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import Flash.FlashObjectWebDriver;
+
+public class Selenium1 {
+	
+	public static void main(String args[]) throws InterruptedException
+	{
+		System.setProperty("webdriver.chrome.driver", "C:/Program Files/chromedriver_win32/chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("http://www.demo.guru99.com/test/flash-testing.html");
+		FlashObjectWebDriver web = new FlashObjectWebDriver(driver,"myFlashMovie");
+		Thread.sleep(500);
+		//web.click("clsid:D27CDB6E-AE6D-11cf-96B8-444553540000");
+		web.callFlashObject("Play");
+		
+	}
+
+}

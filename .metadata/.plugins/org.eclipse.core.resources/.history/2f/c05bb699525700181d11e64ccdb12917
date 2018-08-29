@@ -1,0 +1,5 @@
+package main.com.testproject.java.framework.pageobject;
+
+public class HomePage {
+
+}

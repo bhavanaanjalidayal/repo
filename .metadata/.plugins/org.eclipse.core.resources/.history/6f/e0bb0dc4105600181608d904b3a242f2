@@ -1,0 +1,48 @@
+package NewPackage;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Sample {
+	static int a,b,c;
+	public static void main(String args[]) throws NumberFormatException, IOException
+	{
+//		InputStreamReader read = new InputStreamReader(System.in);
+//		BufferedReader in = new BufferedReader(read);
+//		
+//		a = Integer.parseInt(in.readLine());
+//		
+//		b =  Integer.parseInt(in.readLine());
+//		
+//		c = Integer.parseInt(in.readLine());
+//
+//		if(a==b && b!=c)
+//		{
+//			System.out.println("It is an iscoceles triangle");
+//		}
+//		if(a!=b && b!=c && a!=c)
+//		{
+//			System.out.println("It is a scalene triangle");
+//		}
+//		if(a==b && b==c)
+//		{
+//			System.out.println("It is an equilateral triangle");
+//		}
+		int y = 10;
+		y++;
+		System.out.println(Math.sqrt(y));
+		//Math.sqrt(y);
+		System.out.println(Math.min(y, y));
+		System.out.println(Math.max(y, y));
+		System.out.println(Math.pow(y, y));
+		System.out.println(Math.log(y));
+		System.out.println(Math.abs(y));
+		System.out.println(Math.round(y));
+		System.out.println(Math.floor(y));
+		System.out.println(Math.sin(y));
+		System.out.println(Math.addExact(y, y));
+		System.out.println(Math.subtractExact(y, y));
+	}
+
+}

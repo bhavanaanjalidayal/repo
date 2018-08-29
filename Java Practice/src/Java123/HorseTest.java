@@ -1,0 +1,32 @@
+package Java123;
+public class HorseTest 
+{
+	public static void main (String [] args) 
+    {
+//        class Horse 
+//        {
+//        	public String name; /* Line 7 */
+//        public Horse(String s) 
+//            {
+//                name = s;
+//            }
+//        } /* class Horse ends */
+//        
+//        Horse obj = new Horse("Zippo"); /* Line 13 */
+//        Horse h = (Horse) obj; /* Line 14 */
+//        System.out.println(h.name);
+        boolean a = true;
+        boolean b = true;
+		boolean c=a!=b;
+		boolean d=a^b;
+		boolean e =c==d;
+		System.out.println(c+"   "+d+"   "+e);
+		
+        
+
+    }
+	
+	
+	
+	
+} /* class HorseTest ends */

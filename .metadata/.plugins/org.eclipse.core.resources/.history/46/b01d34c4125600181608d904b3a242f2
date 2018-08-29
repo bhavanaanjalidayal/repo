@@ -1,0 +1,33 @@
+package Java123;
+
+public class SampleTets {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int y = 10;
+		y++;
+		System.out.println(Math.sqrt(y));
+		//Math.sqrt(y);
+		System.out.println(Math.min(y, y));
+		System.out.println(Math.max(y, y));
+		System.out.println(Math.pow(y, y));
+		System.out.println(Math.log(y));
+		System.out.println(Math.abs(y));
+		System.out.println(Math.round(y));
+		System.out.println(Math.floor(y));
+		System.out.println(Math.sin(y));
+		System.out.println(Math.addExact(y, y));
+		System.out.println(Math.subtractExact(y, y));
+		
+		int i =20;
+		if(i>20)
+			System.out.println();
+		else if(i<3)
+			System.out.println(i);
+		else if (i>45)
+			System.out.println(i);
+		else
+			System.out.println(i);
+	}
+
+}

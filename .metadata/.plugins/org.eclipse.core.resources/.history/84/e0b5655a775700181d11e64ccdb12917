@@ -1,0 +1,26 @@
+package com.testproject.java;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
+
+import main.com.testproject.java.framework.locators.*;
+
+public class HomePageScripts {
+	static HomePage wb = new HomePage();
+	static WebDriver driver = wb.WebBrowser("Chrome");
+	//void launchURL()
+	public static void main(String args[])
+	{
+		driver.get("https://xcelerator.ninja");
+		clickon3Lines();
+	}
+	
+	static void clickon3Lines()
+	{
+		
+		driver.findElement(By.xpath("//*[@id=\'root\']/div/div[2]/div[1]/div/div[1]/span[1]")).click();
+		//div[@class='loggedOutMenu col-xs-12']//span/child::i
+		////span[@class='hamBurger']/child::i
+	}
+}

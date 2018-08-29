@@ -1,0 +1,33 @@
+package Java123;
+
+public class Binary {
+
+	public static void main(String args[])
+	{
+		int y = 300;
+		System.out.println(Integer.toBinaryString(y));
+		char t[] = Integer.toBinaryString(y).toCharArray();
+		int temp=0;
+		for(int i =0;i<t.length;i++)
+		{
+		System.out.println(t[i]);	
+		if(t[i]=='1')
+		{
+			temp=temp+1;
+		}
+		
+		}
+		System.out.println(temp);
+		
+		TwoDArray();
+	}
+	
+	
+	static void TwoDArray()
+	{
+		int[][] e = new int[1][2];
+		System.out.println(e);
+	}
+	
+	
+}

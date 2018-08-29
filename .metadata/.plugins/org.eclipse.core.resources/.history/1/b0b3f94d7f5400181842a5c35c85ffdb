@@ -1,0 +1,49 @@
+package Java123;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class HorseTest 
+{
+	public static void main (String [] args) 
+    {
+        class Horse 
+        {
+        	public String name; /* Line 7 */
+        public Horse(String s) 
+            {
+                name = s;
+            }
+        } /* class Horse ends */
+        
+        Horse obj = new Horse("Zippo"); /* Line 13 */
+        Horse h = (Horse) obj; /* Line 14 */
+        System.out.println(h.name);
+
+	
+	
+	int a,b,c;
+	InputStreamReader read = new InputStreamReader(System.in);
+	BufferedReader in = new BufferedReader(read);
+	
+	a = Integer.parseInt(in.readLine());
+	
+	b =  Integer.parseInt(in.readLine());
+	
+	c = Integer.parseInt(in.readLine());
+
+	if(a==b && b!=c)
+	{
+		System.out.println("It is an iscoceles triangle");
+	}
+	if(a!=b && b!=c && a!=c)
+	{
+		System.out.println("It is a scalene triangle");
+	}
+	if(a==b && b==c)
+	{
+		System.out.println("It is an equilateral triangle");
+	}
+}
+}
+}/* class HorseTest ends */

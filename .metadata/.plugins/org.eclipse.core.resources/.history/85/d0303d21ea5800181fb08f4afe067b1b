@@ -1,0 +1,52 @@
+package pages;
+
+import cucumber.api.PendingException;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class Test123 {
+	@Given("User is on Home Page") 
+	public void M1()
+	{
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	};
+
+	@When("User Navigate to LogIn Page")
+	public void M2()
+	{
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	};
+
+	@When("User enters UserName and Password")
+	public void M3()
+	{
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	};
+
+	@Then("Message displayed Login Successfully")
+	public void M4()
+	{
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	};
+
+	@When("User LogOut from the Application")
+	public void M5()
+	{
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	};
+
+	@Then("Message displayed LogOut Successfully")
+	public void M6()
+	{
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	};
+
+
+}

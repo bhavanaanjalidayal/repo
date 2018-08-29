@@ -1,0 +1,14 @@
+package pages;
+
+public class TestNGCucumberRunner {
+
+	TestNGCucumberRunner(Class<? extends Runnerclass> class1)
+	{
+		
+	}
+
+	public void runCucumber(Object cucumberFeature) {
+		// TODO Auto-generated method stub
+		
+	}
+}

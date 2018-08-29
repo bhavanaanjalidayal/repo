@@ -1,0 +1,94 @@
+package com.testproject.java;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import main.com.testproject.java.framework.locators.*;
+
+public class HomePageScripts {
+	static HomePage wb = new HomePage();
+	static WebDriver driver = wb.WebBrowser("InternetExplorer");
+	static WebElement e = null;
+	//void launchURL()
+	public static void main(String args[]) throws InterruptedException
+	{
+		driver.get("https://xcelerator.ninja");
+		clickon3Lines();
+		drawersidebar("projects");
+	}
+	
+	static void clickon3Lines() throws InterruptedException
+	{
+		
+		    //Actions can be performed here
+	
+		
+		Thread.sleep(1000);
+		
+		String[] xpath = {"//span[@class='hamBurger']",
+				"//div[@class='loggedOutMenu col-xs-12']//span/child::i","//span[@class='hamBurger']/child::i",
+				"//span[@class='hamBurger']/descendant::i[@class='fa fa-bars']"};
+		
+		
+		for(int i=0;i<4;i++)
+		{
+			try 
+			{
+			e = driver.findElement(By.xpath(xpath[i]));
+			}
+			catch (RuntimeException ee)
+			{
+				System.out.println(i+ "= 3 lines NO Xpath Worked");
+			    if (ee.toString().contains("NoSuchElementException"))
+			    {
+			    	
+			    	 continue;
+			    	
+			    	
+			    }
+			   
+			}
+			boolean t = e.isDisplayed();
+		
+		if(t==true)
+		e.click();
+		break;
+		}	
+		
+		
+	//div[@class='drawer']//div[@id='drawerListItem-ninja']
+		//Thread.sleep(1000);
+	
+	}//driver.findElement(By.xpath("//span[@class='listItemSpan']//div/child::div[text()='Mentor']")).click();
+		
+	
+	static void drawersidebar(String option) throws InterruptedException
+		{
+		String xpath1[] = {"//div[@class='drawer']//div[@id='drawerListItem-"};
+		
+		//  ninja']
+for(int i=0;i<1;i++)
+{
+try
+{
+	if(i==0)
+e = driver.findElement(By.xpath(xpath1+option));
+	else
+		e = driver.findElement(By.xpath(xpath1[i]));	
+	
+}
+catch(Exception ee)
+{
+	 if (ee.toString().contains("NoSuchElementException"))
+	    {
+		 System.out.println("NO Xpath Worked");
+	      continue;
+	    }
+}
+Thread.sleep(1000);
+	e.click();	
+		}	
+	
+}}

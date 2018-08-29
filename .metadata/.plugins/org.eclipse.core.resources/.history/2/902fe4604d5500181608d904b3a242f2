@@ -1,0 +1,99 @@
+package com.stta.utility;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Sample1 {
+	static int a,b,c;
+	public static void main(String args[]) throws NumberFormatException, IOException
+	{
+//		InputStreamReader read = new InputStreamReader(System.in);
+//		BufferedReader in = new BufferedReader(read);
+//		
+//		a = Integer.parseInt(in.readLine());
+//		
+//		b =  Integer.parseInt(in.readLine());
+//		
+//		c = Integer.parseInt(in.readLine());
+//**********************************TRIANGLES*********************************************************
+//		if(a==b && b==c && a==c)
+//		{
+//			System.out.println("It is an iscoceles triangle");
+//		}
+//		if(a!=b && b!=c && a!=c)
+//		{
+//			System.out.println("It is a scalene triangle");
+//		}
+//		if(a==b && b==c)
+//		{
+//			System.out.println("It is an equilateral triangle");
+//		}
+		
+//***********************************GRADES********************************************
+//		boolean t = true;
+//		 first:
+//	        {
+//	            // Illegal statement here as label second is not
+//	            // introduced yet break second;
+//	            second:
+//	            {
+//	                third:
+//	                {
+//	                    // Before break
+//	                    System.out.println("Before the break statement");
+//	 
+//	                    // break will take the control out of
+//	                    // second label
+//	                    if (t)
+//	                        break second;
+//	                    System.out.println("This won't execute.");
+//	                }
+//	                System.out.println("This won't execute.");
+//	            }
+//	 
+//	            // Third block
+//	            System.out.println("This is after second block.");
+//	        }
+		
+		
+//****************************************************CONTINUE*************************************************
+//		for (int i = 0; i < 10; i++)
+//        {
+//            // If the number is even
+//            // skip and continue
+//            if (i%2 == 0)
+//                continue;
+// 
+//            // If number is odd, print it
+//            System.out.print(i + " ");
+//        }
+//******************************************************************************************************************
+		
+		for(int i=0;i<8;i++)
+		{
+			if(i<5)
+			{
+			for(int j = 0;j<i;j++)
+			{
+				System.out.print("* ");
+			}
+			System.out.println();
+			}
+			if(i>=5)
+			{
+				for(int k=9;k>i;k--)
+				{
+					System.out.print("* ");
+				}
+				System.out.println();
+				}	
+			}
+		}
+		
+		
+		
+		
+	}
+
+

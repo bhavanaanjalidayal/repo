@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;AmazonTest.java&apos; to &apos;Maven/src/main/java/pages&apos;&#x0D;&#x0A;- Original project: &apos;HelloMaven&apos;&#x0D;&#x0A;- Destination element: &apos;Maven/src/main/java/pages&apos;&#x0D;&#x0A;- Original element: &apos;HelloWorld.HelloMaven.AmazonTest.java&apos;" description="Copy compilation unit" destination="=Maven/src\/main\/java&lt;pages" element1="/src\/test\/java&lt;HelloWorld.HelloMaven{AmazonTest.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1522128215832" units="1" version="1.0"/>
+</session>

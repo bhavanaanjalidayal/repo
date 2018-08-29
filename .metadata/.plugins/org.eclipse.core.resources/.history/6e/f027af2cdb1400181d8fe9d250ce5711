@@ -1,0 +1,15 @@
+public class Operations
+{
+	Operations(int a ,int b)
+	{
+		//System.out.println(a);
+//		int c = a+b;
+//		System.out.println(c);
+	}
+public static void main(String args[])
+	{
+		Operations d = new Operations(1,3);
+System.out.println("Heloo");
+		
+	}
+}

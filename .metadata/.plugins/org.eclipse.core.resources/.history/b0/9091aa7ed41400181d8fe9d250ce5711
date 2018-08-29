@@ -1,0 +1,20 @@
+public class Operations
+{
+	public int add(int a,int b)
+	{
+
+		if(a%2==0)
+		{
+			System.out.println("a is an even number");
+		}
+		else
+			System.out.println("a is an odd number");
+		return a;
+	}
+	public static void main(String args[])
+	{
+		Operations d = new Operations();
+		d.add(13, 12);
+	}
+	
+}

@@ -1,0 +1,26 @@
+package Java123;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Sample {
+	static int a,b;
+	public static void main(String args[]) throws NumberFormatException, IOException
+	{
+		InputStreamReader read = new InputStreamReader(System.in)
+;
+		BufferedReader in = new BufferedReader(read);
+		
+		a = Integer.parseInt(in.readLine());
+		
+		b =  Integer.parseInt(in.readLine());
+		
+		int difference = a-b;
+		int addition = a+b;
+		System.out.println(difference);
+		System.out.println(addition);
+		
+	}
+
+}

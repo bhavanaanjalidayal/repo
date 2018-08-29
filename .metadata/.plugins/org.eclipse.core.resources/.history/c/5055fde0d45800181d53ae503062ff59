@@ -1,0 +1,15 @@
+package pages;
+ 
+import org.junit.runner.RunWith;
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+ 
+@RunWith(Cucumber.class)
+@CucumberOptions(
+		features = "src/main/java/datatable/Cake"
+		,glue={"src/main/java/pages/MystepDefs"}
+		)
+ 
+public class Runnerclass {
+ 
+}

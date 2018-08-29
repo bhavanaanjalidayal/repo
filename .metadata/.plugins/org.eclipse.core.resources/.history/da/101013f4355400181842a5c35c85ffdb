@@ -1,0 +1,2 @@
+INSERT INTO Customer (FirstName, LastName, City, Country, Phone)
+VALUES ('Craig', 'Smith', 'New York', 'USA', 1-01-993 2800)

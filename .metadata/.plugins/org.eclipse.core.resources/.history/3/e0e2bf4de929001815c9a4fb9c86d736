@@ -1,0 +1,15 @@
+package Java123;
+
+public class Binary {
+
+	public static void main(String args[])
+	{
+		int y = 300;
+		System.out.println(Integer.toBinaryString(y));
+		char t[] = Integer.toBinaryString(y).toCharArray();
+		System.out.println(t[2]);
+	}
+	
+	
+	
+}

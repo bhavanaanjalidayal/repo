@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"MercuryTours","l":"UnderstandingForLoop"}]

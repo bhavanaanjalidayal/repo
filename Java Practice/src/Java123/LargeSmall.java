@@ -1,0 +1,29 @@
+package Java123;
+import java.util.Scanner;
+
+public class LargeSmall {
+
+	public static void main(String args[])
+	{
+//		int[] a = {91,23,84,56,78,9};
+//		int temp = 0;
+//		for(int i=0;i<a.length;i++)
+//		{
+//			if(temp<a[i+1])
+//			{
+//				temp = a[i+1]; 
+//			}
+			
+			int[] awe = new int[10];
+			Scanner scan = new Scanner(System.in);
+			for(int j =0;j<10;j++)
+			{
+				
+				awe[j]=scan.nextInt();
+			}
+			
+			
+			
+		}
+	}
+

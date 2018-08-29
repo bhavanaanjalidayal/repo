@@ -1,0 +1,32 @@
+package Basic;
+import java.util.*;
+
+class ArrayBasic2{
+  public static void main(String[] args){
+//    int[] z = new int[10];
+//    Scanner s = new Scanner(System.in);
+//
+//    System.out.println("Enter 10 integers of array");
+//
+//    for (int i=0;i<10;i++){
+//      z[i] = s.nextInt();
+//    }
+//
+//    System.out.println("You have entered");
+//
+//    for (int i=0;i<10;i++){
+//      System.out.println(z[i]);
+//    }
+    
+    Scanner scan = new Scanner(System.in);
+	//scan.nextInt();
+	if(scan.hasNextInt())
+{
+System.out.println(scan.nextInt());
+}
+	if(scan.hasNext())
+	{
+		System.out.println(scan.next());
+	}
+  }
+}

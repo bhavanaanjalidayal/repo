@@ -1,0 +1,12 @@
+package pages;
+
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+	@CucumberOptions(plugin={"pretty","html:format"},
+
+	features = "Features/name.feature",glue={"path where step definitions exist"})
+	public class RunnerClass {
+
+	}
+

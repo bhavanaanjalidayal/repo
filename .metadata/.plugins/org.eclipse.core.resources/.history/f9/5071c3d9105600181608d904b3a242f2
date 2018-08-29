@@ -1,0 +1,40 @@
+package Java123;
+public class HorseTest 
+{
+	public static void main (String [] args) 
+    {
+//        class Horse 
+//        {
+//        	public String name; /* Line 7 */
+//        public Horse(String s) 
+//            {
+//                name = s;
+//            }
+//        } /* class Horse ends */
+//        
+//        Horse obj = new Horse("Zippo"); /* Line 13 */
+//        Horse h = (Horse) obj; /* Line 14 */
+//        System.out.println(h.name);
+        
+        
+        
+		int y = 10;
+		y++;
+		System.out.println(Math.sqrt(y));
+		//Math.sqrt(y);
+		System.out.println(Math.min(y, y));
+		System.out.println(Math.max(y, y));
+		System.out.println(Math.pow(y, y));
+		System.out.println(Math.log(y));
+		System.out.println(Math.abs(y));
+		System.out.println(Math.round(y));
+		System.out.println(Math.floor(y));
+		System.out.println(Math.sin(y));
+		System.out.println(Math.addExact(y, y));
+		System.out.println(Math.subtractExact(y, y));
+    }
+	
+	
+	
+	
+} /* class HorseTest ends */

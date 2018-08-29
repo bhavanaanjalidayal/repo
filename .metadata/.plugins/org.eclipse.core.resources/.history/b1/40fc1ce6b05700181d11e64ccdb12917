@@ -1,0 +1,71 @@
+package com.testproject.java;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import main.com.testproject.java.framework.locators.*;
+
+public class HomePageScripts {
+	static HomePage wb = new HomePage();
+	static WebDriver driver = wb.WebBrowser("Chrome");
+	static WebElement e = null;
+	//void launchURL()
+	public static void main(String args[]) throws InterruptedException
+	{
+		driver.get("https://xcelerator.ninja");
+		clickon3Lines();
+	}
+	
+	static void clickon3Lines() throws InterruptedException
+	{
+		
+		    //Actions can be performed here
+	
+		
+		Thread.sleep(1000);
+		
+		String[] xpath = {"//span[@class='hamBurger']",
+				"//div[@class='loggedOutMenu col-xs-12']//span/child::i","//span[@class='hamBurger']/child::i"};
+		
+		
+		for(int i=0;i<3;i++)
+		{
+			try 
+			{
+			e = driver.findElement(By.xpath(xpath[i]));
+			}
+			catch (RuntimeException ee)
+			{
+			    if (ee.toString().contains("NoSuchElementException"))
+			    {
+			      continue;
+			    }
+			}
+			boolean t = e.isDisplayed();
+		
+		if(t==true)
+		e.click();
+		break;
+		}	
+		
+		
+	//div[@class='drawer']//div[@id='drawerListItem-ninja']
+		//Thread.sleep(1000);
+	
+	}//driver.findElement(By.xpath("//span[@class='listItemSpan']//div/child::div[text()='Mentor']")).click();
+		
+	
+	void drawersidebar(String option)
+		{
+		String xpath1 = "//div[@class='drawer']//div[@id='drawerListItem-";
+		//  ninja']
+String[] drawer = {"ninja","mentor","institute"};
+
+			e = driver.findElement(By.xpath(xpath1+drawer[i]));
+
+		
+		}	
+	
+}

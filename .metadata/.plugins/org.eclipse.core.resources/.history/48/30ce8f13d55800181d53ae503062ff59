@@ -1,0 +1,10 @@
+package pages;
+
+public class CucumberFeatureWrapper {
+
+	public Object getCucumberFeature() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

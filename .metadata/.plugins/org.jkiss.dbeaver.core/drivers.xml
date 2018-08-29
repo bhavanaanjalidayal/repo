@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drivers>
+	<provider id="db2"/>
+	<provider id="exasol"/>
+	<provider id="jaybird"/>
+	<provider id="generic">
+		<driver id="informix" category="DB2" custom="false" embedded="false" name="Informix" class="com.informix.jdbc.IfxDriver" url="jdbc:informix-sqli://{host}:{port}/{database}:INFORMIXSERVER={server}" port="1533" description="IBM Informix Dynamic Server">
+			<library type="jar" path="repo:/drivers/informix/ifxjdbc.jar" custom="false">
+				<file id="repo:/drivers/informix/ifxjdbc.jar" path="${drivers_home}\drivers\informix\ifxjdbc.jar"/>
+			</library>
+			<library type="jar" path="repo:/drivers/informix/ifxlang.jar" custom="false">
+				<file id="repo:/drivers/informix/ifxlang.jar" path="${drivers_home}\drivers\informix\ifxlang.jar"/>
+			</library>
+			<library type="license" path="repo:/drivers/informix/LICENSE.txt" custom="false">
+				<file id="repo:/drivers/informix/LICENSE.txt" path="${drivers_home}\drivers\informix\LICENSE.txt"/>
+			</library>
+		</driver>
+		<driver id="msaccess_ucanaccess" category="MS Access" custom="false" embedded="true" name="UCanAccess" class="net.ucanaccess.jdbc.UcanaccessDriver" url="jdbc:ucanaccess://{file}" description="Microsoft Access driver">
+			<library type="jar" path="maven:/net.sf.ucanaccess:ucanaccess:RELEASE" custom="false">
+				<file id="net.sf.ucanaccess:ucanaccess" version="4.0.4" path="${drivers_home}\maven\maven-central\net.sf.ucanaccess\ucanaccess-4.0.4.jar"/>
+				<file id="org.hsqldb:hsqldb" version="2.3.1" path="${drivers_home}\maven\maven-central\org.hsqldb\hsqldb-2.3.1.jar"/>
+				<file id="com.healthmarketscience.jackcess:jackcess" version="2.1.11" path="${drivers_home}\maven\maven-central\com.healthmarketscience.jackcess\jackcess-2.1.11.jar"/>
+				<file id="commons-lang:commons-lang" version="2.6" path="${drivers_home}\maven\maven-central\commons-lang\commons-lang-2.6.jar"/>
+				<file id="commons-logging:commons-logging" version="1.1.3" path="${drivers_home}\maven\maven-central\commons-logging\commons-logging-1.1.3.jar"/>
+			</library>
+		</driver>
+	</provider>
+	<provider id="mssql"/>
+	<provider id="mysql"/>
+	<provider id="oracle"/>
+	<provider id="postgresql"/>
+	<provider id="vertica"/>
+</drivers>
