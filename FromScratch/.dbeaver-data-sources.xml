@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-sources>
+	<data-source id="msaccess_ucanaccess-163499d97c4-674567023e61d8a" provider="generic" driver="msaccess_ucanaccess" name="MS Access - db1.mdb" save-password="true" show-system-objects="true" read-only="false">
+		<connection server="" database="C:\Users\Administrator\Desktop\db1.mdb" url="jdbc:ucanaccess://C:\Users\Administrator\Desktop\db1.mdb" type="dev"/>
+	</data-source>
+	<data-source id="msaccess_ucanaccess-16349d03eaf-292a8a05f228ec72" provider="generic" driver="msaccess_ucanaccess" name="MS Access - Employment.mdb" save-password="true" show-system-objects="true" read-only="false">
+		<connection server="" database="C:\Users\Administrator\Desktop\Employment.mdb" url="jdbc:ucanaccess://C:\Users\Administrator\Desktop\Employment.mdb" type="dev"/>
+	</data-source>
+	<filters/>
+</data-sources>
